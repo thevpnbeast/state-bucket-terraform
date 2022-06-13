@@ -2,10 +2,19 @@ provider "aws" {
   region = var.aws_region
 }
 
+locals {
+  tags = {
+    project     = "thevpnbeast"
+    responsible = "infra"
+    versioning  = var.versioning_enabled
+    encryption  = var.encryption_enabled
+  }
+}
+
 resource "aws_s3_bucket" "terraform_state" {
   bucket        = var.bucket_name
   force_destroy = true
-  tags          = var.bucket_tags
+  tags          = local.tags
 }
 
 resource "aws_s3_bucket_acl" "acl_configuration" {
