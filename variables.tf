@@ -10,14 +10,6 @@ variable "bucket_name" {
   description = "Unique name of the bucket"
 }
 
-variable "bucket_tags" {
-  type = map(string)
-  default = {
-    project     = "thevpnbeast"
-    responsible = "infra"
-  }
-}
-
 variable "versioning_enabled" {
   type        = bool
   default     = true
