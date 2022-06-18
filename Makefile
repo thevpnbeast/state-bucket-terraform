@@ -1,3 +1,6 @@
+# assumes that we have already a profile named thevpnbeast-root in AWS CLI config
+export AWS_PROFILE := thevpnbeast-root
+
 init:
 	terraform init -input=false
 
