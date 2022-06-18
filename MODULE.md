@@ -34,7 +34,6 @@ No modules.
 |------|-------------|------|---------|:--------:|
 | <a name="input_aws_region"></a> [aws\_region](#input\_aws\_region) | AWS region to create resources on | `string` | `"us-east-1"` | no |
 | <a name="input_bucket_name"></a> [bucket\_name](#input\_bucket\_name) | Unique name of the bucket | `string` | `"thevpnbeast-terraform-states"` | no |
-| <a name="input_bucket_tags"></a> [bucket\_tags](#input\_bucket\_tags) | n/a | `map(string)` | <pre>{<br>  "project": "thevpnbeast",<br>  "responsible": "infra"<br>}</pre> | no |
 | <a name="input_encryption_enabled"></a> [encryption\_enabled](#input\_encryption\_enabled) | You want encryption on the bucket or not | `bool` | `true` | no |
 | <a name="input_lock_table_enabled"></a> [lock\_table\_enabled](#input\_lock\_table\_enabled) | You want DynamoDB lock table to store lock files or not | `bool` | `false` | no |
 | <a name="input_lock_table_name"></a> [lock\_table\_name](#input\_lock\_table\_name) | Unique name of the lock table | `string` | `"thevpnbeast-terraform-locks"` | no |
